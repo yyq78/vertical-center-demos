@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vertical-center-block</title>
+    <style type="text/css">
+        /*使用position定位*/
+        #father{
+            width:200px;
+            height:200px;
+            border:1px solid silver;
+            position:relative;
+           
+        }
+        #father div{
+            width:30px;
+            height:30px;
+            background:lightblue;
+            position:absolute;
+            top:50%;
+            left:50%;
+            margin-top:-15px;/*"height 值一半的负值"*/
+            margin-left:-15px;/*"width 值一半的负值"*/
+        }
+        /*尝试table-cell*/
+       /*#father{
+            width:200px;
+            height:200px;
+            border:1px solid silver;
+            display:table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+        #father div{
+            width:30px;
+            height:30px;
+            background:lightblue;
+        }*/
+    </style>
+
+</head>
+<body>
+    <div id="father">
+        <div></div>
+    </div>
+</body>
+</html>
